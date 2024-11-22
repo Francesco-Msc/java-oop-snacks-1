@@ -26,4 +26,8 @@ public class ContoBancario {
             System.out.println("Fondi insufficenti nel saldo");
         }
     }
+
+    public double SaldoCorrente(){
+        return saldo;
+    }
 }

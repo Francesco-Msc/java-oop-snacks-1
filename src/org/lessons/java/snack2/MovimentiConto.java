@@ -5,5 +5,9 @@ public class MovimentiConto {
         ContoBancario movimenti = new ContoBancario(3345);
 
         movimenti.Deposita(150);
+
+        movimenti.Preleva(20);
+
+        System.out.println("Saldo corrente: " + movimenti.SaldoCorrente() + " €");
     }
 }

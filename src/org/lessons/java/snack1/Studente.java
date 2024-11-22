@@ -10,4 +10,8 @@ public class Studente {
         this.cognome = cognome;
         this.età = età;
     }
+
+    public String datiStudente(){
+        return nome +" "+ cognome +", "+ età +" Anni";
+    }
 }

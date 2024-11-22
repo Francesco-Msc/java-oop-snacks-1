@@ -13,7 +13,9 @@ public class ContoBancario {
         if (importo > 0) {
             saldo += importo;
             System.out.println("Hai depositato " + importo + " €");
-        } System.out.println("L'importo da depositare deve essere positivo");
+        } else{
+            System.out.println("L'importo da depositare deve essere positivo");
+        }
     }
 
     public void Preleva(double importo){

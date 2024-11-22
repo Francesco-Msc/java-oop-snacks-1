@@ -13,9 +13,19 @@ public class RegistroStudenti {
         for(int i = 0; i < registro.length; i++){
             studentiPresenti[i] = registro[i];
         }
-        
+
         studentiPresenti[registro.length] = nome;
         registro = studentiPresenti;
+    }
+
+    public void stampaStudenti(){
+        if (registro.length == 0) {
+            System.out.println("Non ci sono studenti in classe");
+        } else {
+            for(String studente : registro){
+                System.out.println(studente);
+            }
+        }
     }
 
 }

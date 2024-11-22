@@ -15,4 +15,15 @@ public class ContoBancario {
             System.out.println("Hai depositato " + importo + " €");
         } System.out.println("L'importo da depositare deve essere positivo");
     }
+
+    public void Preleva(double importo){
+        if (importo > 0 && importo < saldo) {
+            saldo -= importo;
+            System.out.println("Hai prelevato " + importo +" €");
+        } else if (importo < 0){
+            System.out.println("L'importo da prelevare deve essere positivo");
+        } else {
+            System.out.println("Fondi insufficenti nel saldo");
+        }
+    }
 }

@@ -8,4 +8,11 @@ public class ContoBancario {
         this.numeroConto = numeroConto;
         this.saldo = 0.0;
     }
+
+    public void Deposita(double importo){
+        if (importo > 0) {
+            saldo += importo;
+            System.out.println("Hai depositato " + importo + " €");
+        } System.out.println("L'importo da depositare deve essere positivo");
+    }
 }
